@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Space Age";
+    src: url("/assets/fonts/space-age.ttf");
+  }
+
+
+
+html{
+    font-family: "Space Age";
+}
+
+.cabecalho{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+#box-description{
+    height: 400px;
+    width: 50%;
+    font-size: 15px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+}
+
+#box-navigation{
+
+    height: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/img/cosmic.gif');
+    background-size: cover
+}
+
+#foto-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-principal{
+    width: 70%;
+    height: 600px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: white;
+    background-color: black;
+}
+
+#anterior, #proximo{
+    font-size: 15px;
+    font-family: "Space Age";
+    background-color: black;
+    color: white;
+    height: 90%;
+    width: 40%;
+    border: 1px solid black;
+}
+
+#anterior:hover{
+    font-size: 20px;
+    transition: 0.5s;
+    background-color: rgb(26, 24, 24);
+    border-radius: 2px;
+    border-left: 1px solid white;
+}
+
+#proximo:hover{
+    font-size: 20px;
+    transition: 0.5s;
+    background-color: rgb(26, 24, 24);
+    border-radius: 2px;
+    border-right: 1px solid white;
+}
+
+input{
+    color: white;
+    background-color: black;
+    font-family: "Space Age";
+}
+
+#titulo{
+    text-align: center;
+    font-size: 20px;
+}
+
+#explicacao, #titulo, #direito, #dataP, #media {
+    margin: 0 10px 0 10px;
+}
+
+#titulo, #media{
+    margin-top: 10px;
+}
+
+
+@media(max-width: 700px){
+    .cabecalho{
+        height: 10vh;
+    }
+
+    .box1{
+       height: 60vh;
+        
+    }
+
+    .imagem-principal{
+        width: 100%;
+        height: 60vh;
+    }
+    
+
+    #box-description{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 90%;
+    }
+
+    #box-navigation{
+        height: 20vh;
+        width: 90%;
+    }
+
+    #div-input{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #anterior, #proximo{
+        font-size: 15px;
+        height: 10vh;
+        width: 30%;
+    }
+
+    #anterior:hover{
+        font-size: 15px;
+    }
+
+    #proximo:hover{
+        font-size: 15px;
+    }
+
+    #anterior:active{
+        transition: 0.5s;
+        background-color: rgb(26, 24, 24);
+        border-radius: 2px;
+        border-left: 1px solid white;
+    }
+
+    #proximo:active{
+        transition: 0.5s;
+        background-color: rgb(26, 24, 24);
+        border-radius: 2px;
+        border-right: 1px solid white;
+    }
+}
