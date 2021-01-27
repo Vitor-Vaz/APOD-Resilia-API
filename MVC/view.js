@@ -13,6 +13,7 @@ class GalaxyView {
 
     }
 
+    
     botaNaTela(titulo, imagem, direito, data, explicacao, midia) {
 
         this._elementoTitulo.textContent = titulo;

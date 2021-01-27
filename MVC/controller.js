@@ -134,3 +134,4 @@ document.getElementById("proximo").addEventListener("click", function () {
 document.getElementById("anterior").addEventListener("click", function () {
     controle.galaxiaAnterior();
 })
+

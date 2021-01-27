@@ -207,6 +207,7 @@ class GalaxyView {
 
 
 
+
 let controle = new GalaxyController();
 
 
