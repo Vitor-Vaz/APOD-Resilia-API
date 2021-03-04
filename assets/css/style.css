@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Space Age";
-    src: url("/assets/fonts/space-age.ttf");
+    src: url("../fonts/space-age.ttf");
   }
 
 
@@ -52,8 +52,8 @@ h1{
 .box1{
     display: flex;
     justify-content: center;
-    background-image: url('/assets/img/cosmic.gif');
-    background-size: cover
+    background-image: url('../img/cosmic.gif');
+    background-size: cover;
 }
 
 
