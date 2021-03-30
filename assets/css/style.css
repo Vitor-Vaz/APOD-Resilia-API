@@ -52,7 +52,7 @@ h1{
 .box1{
     display: flex;
     justify-content: center;
-    background-image: url('../img/cosmic.gif');
+
     background-size: cover;
 }
 
@@ -71,9 +71,9 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    color: white;
     background-color: black;
+    color: white;
+  
 }
 
 #anterior, #proximo{
@@ -121,32 +121,35 @@ input{
     margin-top: 10px;
 }
 
-
-@media(max-width: 700px){
+@media(min-width: 0){
     .cabecalho{
-        height: 10vh;
+
     }
 
     .box1{
-       height: 60vh;
-        
+        padding-top: 5rem;
+        height: 20rem;
+    }
+
+    .box2{
+        height: 41rem;
     }
 
     .imagem-principal{
         width: 100%;
-        height: 60vh;
+        height: 20rem;
     }
     
 
     #box-description{
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 82%;
         width: 90%;
     }
 
     #box-navigation{
-        height: 20vh;
+        height: 18%;
         width: 90%;
     }
 
@@ -183,5 +186,68 @@ input{
         background-color: rgb(26, 24, 24);
         border-radius: 2px;
         border-right: 1px solid white;
+    }
+}
+
+
+@media(min-width: 767px){
+
+    .cabecalho{
+
+    }
+
+    .box1{
+
+        background-image: url('../img/cosmic.gif');
+    }
+    .imagem-principal{
+        width: 90%;
+    }
+
+    .box2{
+        height: 30rem;
+    }
+
+    #box-description{
+
+    }
+
+    #box-navigation{
+
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .cabecalho{
+        height: 10vh;
+    }
+
+    .imagem-principal{
+        width: 50%; 
+        height: 30rem;  
+    }
+
+    .box1{
+        height: 25rem;
+        height: 30rem;  
+    }
+
+    .box2{
+        height: 25rem;
+        
+    }
+
+    #box-description{
+        width: 52%;
+        height: 70%;
+    }
+    #box-navigation{
+        width: 52%;
+        height: 30%;
+    }
+
+    #anterior, #proximo{
+        font-size: 1.3rem;
     }
 }

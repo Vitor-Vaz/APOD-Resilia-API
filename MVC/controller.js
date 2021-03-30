@@ -29,9 +29,13 @@ class GalaxyController {
     buscaGalaxia() {
         let dia = document.getElementById("data").value;
         let model = new GalaxyModel();
-        model.buscaDadosGalaxy(dia);
-
         document.getElementById("data").value = dia;
+
+        model.buscaDadosGalaxy(dia, () => {
+            GalaxyView.botaNaTela(model._titulo, model._imagem, model._direito, model._data, model._explicacao, model._tipoDeMidia)
+        });
+
+        
     }
 
     proximaGalaxia() {
@@ -66,9 +70,14 @@ class GalaxyController {
         let novoDia = arrayData.join("-");
 
         let model = new GalaxyModel();
-        model.buscaDadosGalaxy(novoDia);
 
         document.getElementById("data").value = novoDia;
+
+        model.buscaDadosGalaxy(novoDia, () => {
+            GalaxyView.botaNaTela(model._titulo, model._imagem, model._direito, model._data, model._explicacao, model._tipoDeMidia)
+        });
+
+       
     }
 
     galaxiaAnterior() {
@@ -108,10 +117,15 @@ class GalaxyController {
 
 
         let model = new GalaxyModel();
-        model.buscaDadosGalaxy(novoDia);
-
 
         document.getElementById("data").value = novoDia;
+
+        model.buscaDadosGalaxy(novoDia, () => {
+            GalaxyView.botaNaTela(model.titulo, model.imagem, model.direito, model.data, model.explicacao, model.tipoDeMidia)
+        });
+
+
+        
     }
 }
 
@@ -121,7 +135,7 @@ let controle = new GalaxyController();
 
 controle.buscaGalaxia();
 
-document.getElementById("data").addEventListener('input', function () {
+document.getElementById("data").addEventListener('change', function () {
     controle.buscaGalaxia();
 
 })
